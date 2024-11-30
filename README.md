@@ -41,3 +41,10 @@ File System Behavior:
 Server Behavior:
 - You run a local server and access the app at `http://localhost:8000`.
 - Navigating to `/about` keeps you within the app, and your client-side router handles the route.
+
+### Summary
+A local server is required for client-side routing because:
+
+- Browsers treat paths differently when loaded via `file://`.
+- The History API needs an HTTP context to work properly.
+- A server ensures all routes are handled correctly by serving your app's entry point (`index.html`) for every request.
