@@ -23,8 +23,10 @@ Browser History:
 
 - If the path doesn’t exist in the `routes` object, it displays a "404 - Page Not Found" message.
 
-### Steps to Test:
-- Save the code as an `index.html` file.
-- Open it in your browser.
-- Click on the links in the navigation bar.
-- Use the browser's back and forward buttons to test history handling.
+### Setting Up a Local Server
+- Using Python (Built-In Web Server)
+```bash
+# Python 3.x
+python -m http.server 8000
+```
+- Navigate to `http://localhost:8000` to view your app.
