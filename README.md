@@ -30,3 +30,14 @@ Browser History:
 python -m http.server 8000
 ```
 - Navigate to `http://localhost:8000` to view your app.
+
+### Example Issue Without a Server
+
+File System Behavior:
+
+- You load `index.html` using `file:///path/to/index.html`.
+- Your app works on the home route (`/`), but navigating to `/about` causes the browser to look for a file at `file:///about`, resulting in a "File not found" error.
+
+Server Behavior:
+- You run a local server and access the app at `http://localhost:8000`.
+- Navigating to `/about` keeps you within the app, and your client-side router handles the route.
